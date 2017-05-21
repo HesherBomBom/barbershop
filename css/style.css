@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 960px; 
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-weight: 700;
+  background: #000 url("../img/background.jpg") no-repeat center top;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.7143;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  text-transform: inherit;
+  font-family: inherit;
+}
+
+header {
+  background-color: #000;
+  margin-bottom: 60px;
+}
+
+main.container {
+  padding-bottom: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.main-navigation li {
+  float: left;
+}
+
+.main-navigation a,
+.login {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 25px 20px;
+}
+
+.logo {
+  float: left;
+  padding: 25px 20px 14px;
+}
+
+.user-block {
+  float: right;
+}
+
+.index-logo {
+  width: 368px;
+  margin: 0 auto 25px;
+}
+
+.features {
+  color: #fff;
+  margin-bottom: 83px;
+}
+
+.features-item {
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+
+.features-name {
+  font-size: 30px;
+  line-height: 1.4;
+  /*margin-bottom: 62px;*/
+}
+
+.index-content {
+  background-color: #f7f4f1;
+  margin-bottom: 35px;
+}
+
+.index-content-left,
+.index-content-right {
+  width: 380px;
+}
+
+.index-content-left {
+  float: left;
+}
+
+.index-content-right {
+  float: right;
+}
+
+.main-footer {
+  color: #fff;
+  background: #262626 url(../img/pattern-gray.jpg);
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer p {
+  margin-bottom: 17px;
+  margin-top: 0;
+}
+
+.main-footer .where-are-we {
+  text-decoration: underline;
+}
+
+.footer-contacts,
+.footer-social {
+  float: left;
+}
+
+.footer-copyright {
+  float: right;
+}
+
+.footer-contacts {
+  width: 310px;
+  margin-right: 80px;
+}
+
+.footer-social {
+  width: 160px;
+  text-align: center;
+}
+
+.footer-social a {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  width: 43px;
+  height: 43px;
+  background-color: #000;
+  margin-right: 6px;
+}
+
+.footer-social a:last-child {
+  margin-right: 0;
+}
+
+.social-btn-vk img {
+  margin-top: 14px;
+}
+
+.social-btn-fb img {
+  margin-top: 10px;
+}
+
+.social-btn-inst img {
+  margin-top: 11px;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a {
+  display: block;
+  background-color: #000;
+  width: 140px;
+  padding: 11px 8px;
+}
