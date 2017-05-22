@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
-  <body>
+  <body class="index-body">
     <header class="main-header">
       <div class="container clearfix">
         <nav class="main-navigation">
@@ -61,10 +61,12 @@
           <h2 class="index-content-title">Фотогалерея</h2>
           <div class="gallery">
             <figure class="gallery-content">
-              <img src="img/gallery-1.jpg" alt="Кресла" width="286" height="164">
-             </figure>
-            <button class="btn gallery-prev">Назад</button>
-            <button class="btn gallery-next">Вперед</button>
+              <a href="#"><img src="img/gallery-1.jpg" alt="Галерея" width="286" height="164"></a>
+            </figure>
+            <div class="some-btns">
+              <button class="btn gallery-prev">Назад</button>
+              <button class="btn gallery-next">Вперед</button>
+            </div>
           </div>
         </div>
       </div>
@@ -81,14 +83,16 @@
             пн &mdash; пт: с 10:00 до 22:00<br>
             сб &mdash; вс: с 10:00 до 19:00
           </p>
-          <a class="btn" href="#">Как проехать</a>
-          <a class="btn" href="#"> Обратная связь</a>
+          <div class="some-btns">
+            <a class="btn" href="#">Как проехать</a>
+            <a class="btn" href="#"> Обратная связь</a>
+          </div>
         </div>
         <div class="index-content-right">
-          <h2 class="index content-title">Записаться</h2>
+          <h2 class="index-content-title">Записаться</h2>
           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
           <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-            <input type="date" name="date" placeholder="Дата">
+            <input type="date" name="date" onfocus="(this.type='date')" placeholder="Дата">
             <input type="time" name="time" placeholder="Время">
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="tel" name="phone" placeholder="Телефон">
